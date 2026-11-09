@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 300" fill="none" role="img" aria-labelledby="title">
+  <title id="title">海钓船定点稳船与漂移轨迹示意</title>
+  <defs>
+    <linearGradient id="bg" x1="19" y1="0" x2="580" y2="300" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#142c42"/><stop offset=".68" stop-color="#0d2033"/><stop offset="1" stop-color="#0a1728"/>
+    </linearGradient>
+    <linearGradient id="deck" x1="-63" y1="-22" x2="65" y2="21" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#174055"/><stop offset="1" stop-color="#2d6576"/>
+    </linearGradient>
+    <radialGradient id="range" cx="0" cy="0" r="1" gradientTransform="translate(321 151) scale(126)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4dc5e6" stop-opacity=".17"/><stop offset="1" stop-color="#4dc5e6" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="25" height="25" patternUnits="userSpaceOnUse">
+      <path d="M25 0H0v25" stroke="#86a9c7" stroke-opacity=".10"/>
+    </pattern>
+    <marker id="arrow" viewBox="0 0 8 8" refX="6" refY="4" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="m1 1 5 3-5 3" stroke="#7eddf1" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+  <path fill="url(#bg)" d="M0 0h620v300H0z"/>
+  <path fill="url(#grid)" d="M0 0h620v300H0z"/>
+  <g stroke="#79acc4" stroke-opacity=".25" stroke-linecap="round">
+    <path d="M102 97q12-5 24 0t24 0m30-45q10-5 20 0t20 0m-127 117q12-5 24 0t24 0m-25 63q10-5 20 0t20 0m25-116q10-5 20 0t20 0m193-59q11-5 22 0t22 0m40 30q11-5 22 0t22 0m-7 103q9-5 18 0t18 0m-39 59q11-5 22 0t22 0m-115-17q10-5 20 0t20 0m-222 32q11-5 22 0t22 0"/>
+    <path d="M94 132q8-4 16 0t16 0m70 69q10-5 20 0t20 0m232-83q9-4 18 0t18 0m-41 89q8-4 16 0t16 0m-169 50q8-4 16 0t16 0"/>
+  </g>
+  <circle cx="321" cy="151" r="120" fill="url(#range)"/>
+  <g stroke="#79d4e9" stroke-opacity=".45">
+    <circle cx="321" cy="151" r="41"/><circle cx="321" cy="151" r="76" stroke-dasharray="5 7"/>
+    <circle cx="321" cy="151" r="116" stroke-dasharray="2 8"/>
+    <path d="M321 28v38m0 170v37M195 151h40m172 0h40"/>
+  </g>
+  <path d="M226 183c22 29 54 35 86 16 20-12 18-31 42-42 23-10 54-15 64-38 9-23-13-47-40-41" stroke="#70d5ee" stroke-opacity=".20" stroke-width="6"/>
+  <path d="M226 183c22 29 54 35 86 16 20-12 18-31 42-42 23-10 54-15 64-38 9-23-13-47-40-41" stroke="#8be6f4" stroke-opacity=".80" stroke-width="1.5" stroke-dasharray="4 5" marker-end="url(#arrow)"/>
+  <path d="M321 151l54-34" stroke="#f3bb69" stroke-opacity=".78" stroke-width="1.4" stroke-dasharray="3 5"/>
+  <circle cx="321" cy="151" r="9" fill="#173346" stroke="#f3bb69" stroke-opacity=".66"/>
+  <circle cx="321" cy="151" r="3" fill="#f3bb69"/>
+  <g transform="translate(365 122) rotate(-36)" stroke="#82d9eb" stroke-width="1.35" stroke-linejoin="round">
+    <path d="M-45-19h44c20 0 37 6 50 19C36 13 19 19-1 19h-44z" fill="url(#deck)"/>
+    <path d="M-39-14H0c16 0 31 6 42 14C31 8 16 14 0 14h-39z" fill="#14354b"/>
+    <path d="M-13-12h15l11 5V7L2 12h-15z" fill="#27586d"/>
+    <path d="M-3-9h5l8 4v10L2 9h-5z" fill="#8bdff1" fill-opacity=".34"/>
+    <path d="M-43-11h-8v22h8m-10-6h-6V-5h6m-14-5-15-5m15 25-15 5m14-15h-25" stroke-opacity=".72"/>
+    <path d="M17 0h17m-65-7v14m6-14v14" stroke-opacity=".52"/>
+    <circle cx="2" cy="0" r="2.4" fill="#f3bb69" stroke="none"/>
+  </g>
+  <g stroke="#80dff1" stroke-opacity=".60">
+    <path d="M34 38h28m-28 0v14m525-14h28v14M34 262h28m-28 0v-14m525 14h28v-14"/>
+    <path d="M158 80h51l34 23m160 86 35 21h46M499 124h22l14 12" stroke-dasharray="4 5"/>
+    <circle cx="156" cy="80" r="3"/><circle cx="487" cy="210" r="3"/><circle cx="537" cy="138" r="3"/>
+  </g>
+</svg>

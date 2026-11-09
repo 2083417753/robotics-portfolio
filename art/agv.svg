@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 300" fill="none" role="img" aria-labelledby="title">
+  <title id="title">AGV 小车多传感器融合导航示意</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="570" y2="300" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#142c42"/><stop offset=".67" stop-color="#0d2033"/><stop offset="1" stop-color="#0a1728"/>
+    </linearGradient>
+    <radialGradient id="scan" cx="0" cy="0" r="1" gradientTransform="translate(319 157) rotate(-27) scale(145)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#55d1f0" stop-opacity=".34"/><stop offset="1" stop-color="#55d1f0" stop-opacity=".05"/>
+    </radialGradient>
+    <pattern id="grid" width="25" height="25" patternUnits="userSpaceOnUse">
+      <path d="M25 0H0v25" stroke="#86a9c7" stroke-opacity=".10"/>
+    </pattern>
+    <pattern id="walls" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <path d="M0 0v8" stroke="#79b5d3" stroke-opacity=".25" stroke-width="2"/>
+    </pattern>
+  </defs>
+  <path fill="url(#bg)" d="M0 0h620v300H0z"/>
+  <path fill="url(#grid)" d="M0 0h620v300H0z"/>
+  <g stroke="#6299ba" stroke-opacity=".58" stroke-width="1.25">
+    <path d="M86 71h121v59H86zm1 9v41h111V80zM98 158h106v26h-67v40H98zm9 9v48h21v-40h67v-8zM241 47h105v43h-19V65h-86zM390 44h96v76h45v99h-20v-80h-44V63h-77zM392 213h58v32h-58z" fill="url(#walls)" fill-rule="evenodd"/>
+    <path d="M219 51v71h37m-39 73v50h99m35-32v32h24M548 85v117M70 76v126" stroke-dasharray="3 6"/>
+  </g>
+  <path d="M140 240h77q18 0 27-12l72-76q10-11 30-14l55-12q17-4 17-22V84" stroke="#65dcf2" stroke-opacity=".15" stroke-width="8"/>
+  <path d="M140 240h77q18 0 27-12l72-76q10-11 30-14l55-12q17-4 17-22V84" stroke="#80e6f7" stroke-width="1.6" stroke-dasharray="5 6"/>
+  <circle cx="140" cy="240" r="6" stroke="#80e6f7"/>
+  <circle cx="418" cy="84" r="8" stroke="#f3bb69" stroke-opacity=".45"/>
+  <circle cx="418" cy="84" r="4" fill="#f3bb69"/>
+  <path d="M319 157 344 32a127 127 0 0 1 102 133z" fill="url(#scan)"/>
+  <g stroke="#74d9ef" stroke-opacity=".48">
+    <path d="m319 157 25-125a127 127 0 0 1 102 133zm0 0 81-98m-81 98 116-51"/>
+    <path d="M327 120a38 38 0 0 1 30 39m-22-76a76 76 0 0 1 60 79m-52-118a114 114 0 0 1 90 120"/>
+  </g>
+  <g fill="#8ae7f4">
+    <circle cx="362" cy="56" r="2"/><circle cx="372" cy="60" r="2"/><circle cx="381" cy="68" r="2"/>
+    <circle cx="403" cy="84" r="2"/><circle cx="412" cy="93" r="2"/><circle cx="427" cy="114" r="2"/>
+    <circle cx="430" cy="126" r="2"/><circle cx="434" cy="137" r="2"/><circle cx="439" cy="147" r="2"/>
+  </g>
+  <g transform="translate(316 161) rotate(-46)" stroke="#83d9ec" stroke-width="1.4">
+    <rect x="-33" y="-24" width="66" height="48" rx="9" fill="#21475b"/>
+    <rect x="-26" y="-17" width="52" height="34" rx="5" fill="#13344a"/>
+    <rect x="-24" y="-30" width="16" height="7" rx="2" fill="#14283b"/>
+    <rect x="9" y="-30" width="16" height="7" rx="2" fill="#14283b"/>
+    <rect x="-24" y="23" width="16" height="7" rx="2" fill="#14283b"/>
+    <rect x="9" y="23" width="16" height="7" rx="2" fill="#14283b"/>
+    <path d="M-24-7h12m-12 7h12m-12 7h12m33-19 6 12-6 12" stroke-opacity=".65"/>
+    <circle cx="5" cy="0" r="10" fill="#21536a"/>
+    <circle cx="5" cy="0" r="5" fill="#84e7f8" stroke="none"/>
+    <circle cx="-22" cy="12" r="1.6" fill="#f3bb69" stroke="none"/>
+  </g>
+  <g stroke="#7ce4f5" stroke-opacity=".60">
+    <path d="M34 38h28m-28 0v14m525-14h28v14M34 262h28m-28 0v-14m525 14h28v-14"/>
+    <path d="M234 104h36l18 24m58 64 21 18h19M469 163h24l10 13" stroke-dasharray="4 5"/>
+    <circle cx="232" cy="104" r="3"/><circle cx="505" cy="178" r="3"/>
+  </g>
+</svg>

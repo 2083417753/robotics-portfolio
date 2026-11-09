@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="丁彬的 ROS1 / ROS2 机器人软件开发作品集，收录机器人本体执行与文件适配、无人机导航、AGV 融合定位和视觉送药等 15 个项目。">
+  <meta name="theme-color" content="#f7f6f0">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="丁彬｜机器人软件开发作品集">
+  <meta property="og:description" content="查看丁彬在机器人本体执行、设备侧适配和自主导航项目中的职责、技术方案与验证结果。">
+  <meta property="og:url" content="https://2083417753.github.io/robotics-portfolio/">
+  <title>丁彬｜机器人软件开发作品集</title>
+  <link rel="icon" type="image/svg+xml" href="art/mark.svg">
+  <link rel="canonical" href="https://2083417753.github.io/robotics-portfolio/">
+  <link rel="stylesheet" href="styles.css?v=directory">
+  <script src="projects.js?v=directory" defer></script>
+</head>
+<body id="top">
+  <a class="skip" href="#main">跳到主要内容</a>
+  <header class="topbar">
+    <div class="shell nav-wrap">
+      <a class="brand" href="#top" aria-label="丁彬，返回首页">
+        <img src="art/mark.svg" width="36" height="36" alt="">
+        <span>丁彬<small>DING BIN</small></span>
+      </a>
+      <nav aria-label="主导航">
+        <a href="#projects">项目案例</a>
+        <a href="#skills">技术能力</a>
+        <a href="#about">关于我</a>
+      </nav>
+      <a class="nav-cta" href="#awards">竞赛经历 <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+  <main id="main" tabindex="-1">
+    <section class="hero shell" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="status-dot"></span> ROBOTICS PORTFOLIO <span class="eyebrow-rule"></span> 01</div>
+        <h1 id="hero-title">机器人软件<br><span>开发作品集</span></h1>
+        <p class="hero-role">丁彬 <span aria-hidden="true"></span> 本体执行与实机联调</p>
+        <p class="hero-text">在职负责机器人本体的指令执行与文件适配。在校独立完成无人机导航、AGV 融合导航和视觉送药小车。</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#projects">浏览项目案例 <span aria-hidden="true">↘</span></a>
+          <a class="button secondary" href="#about">了解我的经历 <span aria-hidden="true">↓</span></a>
+        </div>
+        <ul class="hero-stack" aria-label="主要技术">
+          <li>ROS1 / ROS2</li><li>C++ / Python</li><li>Linux</li>
+        </ul>
+      </div>
+      <figure class="hero-figure">
+        <img src="art/uav-navigation.svg" width="700" height="590" fetchpriority="high" alt="四旋翼无人机导航示意图，展示规划航线、沿途航点和目标位置">
+        <figcaption><span><i></i> UAV NAVIGATION</span><span>无人机导航示意</span></figcaption>
+      </figure>
+    </section>
+    <section class="shell section project-section" id="projects" aria-labelledby="project-title">
+      <div class="section-head">
+        <div><p class="eyebrow"><span class="section-number">01</span> PROJECT INDEX</p><h2 id="project-title">项目案例</h2></div>
+        <div class="project-intro">
+          <p>按经历或关键词查找项目，查看我负责的工作、技术实现和验证情况。</p>
+          <div class="project-picks" role="group" aria-label="代表案例">
+            <a href="#case-W03" aria-haspopup="dialog">排水管道检测 <span aria-hidden="true">↗</span></a>
+            <a href="#case-S01" aria-haspopup="dialog">无人机自主导航 <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="project-toolbar">
+        <div class="filters" role="group" aria-label="按项目类型筛选">
+          <button type="button" data-filter="all" aria-pressed="true" aria-controls="project-list">全部项目 <span></span></button>
+          <button type="button" data-filter="work" aria-pressed="false" aria-controls="project-list">在职开发 <span></span></button>
+          <button type="button" data-filter="school" aria-pressed="false" aria-controls="project-list">校园项目 <span></span></button>
+        </div>
+        <div class="project-search" role="search">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><circle cx="10.5" cy="10.5" r="5.75"/><path d="m15 15 4.5 4.5" stroke-linecap="round"/></svg>
+          <label class="visually-hidden" for="project-search">搜索项目或技术</label>
+          <input id="project-search" type="search" placeholder="搜索项目或技术" autocomplete="off" spellcheck="false" aria-controls="project-list">
+          <button id="clear-project-search" type="button" aria-label="清除项目搜索" hidden>清除</button>
+        </div>
+      </div>
+      <p class="project-count" id="project-count" role="status"></p>
+      <div id="project-list"></div>
+      <noscript><p class="no-script">开启浏览器的 JavaScript 即可浏览项目案例、筛选和查看详情。</p></noscript>
+    </section>
+    <section class="systems" id="skills" aria-labelledby="skills-title">
+      <div class="shell section">
+        <div class="section-head">
+          <div><p class="eyebrow"><span class="section-number">02</span> ENGINEERING STACK</p><h2 id="skills-title">技术能力</h2></div>
+        </div>
+        <div class="skill-grid">
+          <article class="skill">
+            <span class="skill-no">01 / EXECUTION</span>
+            <h3>本体指令执行</h3>
+            <p>在船体侧对接推进和转向指令。海钓船在有风浪的近海完成 3 小时稳船测试。</p>
+            <div>CAN / RS-485 · 推进与转向</div>
+            <a class="skill-case" href="#case-W01" aria-haspopup="dialog">海钓船用顶流机 <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="skill">
+            <span class="skill-no">02 / INTEGRATION</span>
+            <h3>设备侧文件适配</h3>
+            <p>适配机器人本体文件，配合联调底盘行走、升降和拍摄动作。系统已用于正式排水管道检测。</p>
+            <div>系缆控制 · 升降限位</div>
+            <a class="skill-case" href="#case-W03" aria-haspopup="dialog">排水管道检测机器人 <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="skill">
+            <span class="skill-no">03 / NAVIGATION</span>
+            <h3>融合定位与导航</h3>
+            <p>在校园 AGV 中接入激光雷达、IMU 和编码器，用 EKF 融合传感器观测，实车完成 200 米连续运输。</p>
+            <div>ROS2 · EKF · STM32</div>
+            <a class="skill-case" href="#case-S02" aria-haspopup="dialog">AGV 多传感器融合导航 <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="skill">
+            <span class="skill-no">04 / PERCEPTION</span>
+            <h3>视觉识别与配送</h3>
+            <p>用 OpenCV 和 OCR 识别病房号，在模拟医院验证出发、到站、卸药和返程。</p>
+            <div>OpenCV · OCR · ROS2</div>
+            <a class="skill-case" href="#case-S03" aria-haspopup="dialog">ROS2 智能送药小车 <span aria-hidden="true">↗</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="shell section about" id="about" aria-labelledby="about-title">
+      <div class="section-head">
+        <div><p class="eyebrow"><span class="section-number">03</span> BACKGROUND</p><h2 id="about-title">关于我</h2></div>
+      </div>
+      <div class="about-grid">
+        <div class="profile-panel">
+          <div class="profile">
+            <h3>丁彬</h3>
+            <p class="profile-role">求职方向 · ROS1 / ROS2 机器人软件开发</p>
+            <p>我的工作涉及海钓船稳船、无人船布网和管道巡检，负责本体侧的指令执行与文件适配。毕业设计中，我独立开发了 ROS 自主导航无人机，从 Gazebo 仿真联调推进到实飞验证。</p>
+          </div>
+          <div class="history">
+            <article>
+              <div class="history-meta">
+                <span class="history-label">工作经历</span>
+                <span class="history-dates"><time datetime="2025-08">2025.08</time> — <time datetime="2026-11">2026.11</time></span>
+              </div>
+              <h3>机器人软件开发工程师</h3>
+              <p>广州市逐电科技有限公司</p>
+            </article>
+            <article>
+              <div class="history-meta">
+                <span class="history-label">教育背景</span>
+                <span class="history-dates"><time datetime="2022">2022</time> — <time datetime="2026">2026</time></span>
+              </div>
+              <h3>电子信息工程 · 本科</h3>
+              <p>江西师范大学科学技术学院</p>
+            </article>
+          </div>
+        </div>
+        <section class="awards" id="awards" aria-labelledby="awards-title">
+          <div class="awards-head">
+            <h3 id="awards-title">竞赛经历</h3>
+            <span>7 项获奖</span>
+          </div>
+          <div class="award-group">
+            <h4>全国大学生电子设计竞赛</h4>
+            <ul class="award-list">
+              <li><time datetime="2025-09">2025.09</time><strong>全国二等奖</strong></li>
+              <li><time datetime="2025-08">2025.08</time><strong>江西赛区一等奖</strong></li>
+              <li><time datetime="2024-08">2024.08</time><strong>江西赛区一等奖</strong></li>
+            </ul>
+          </div>
+          <div class="award-group">
+            <h4>蓝桥杯全国大学生软件和信息技术大赛</h4>
+            <p class="award-track">嵌入式赛项</p>
+            <ul class="award-list">
+              <li><time datetime="2025-07">2025.07</time><strong>全国二等奖</strong></li>
+              <li><time datetime="2025-05">2025.05</time><strong>江西赛区一等奖</strong></li>
+              <li><time datetime="2024-05">2024.05</time><strong>江西赛区二等奖</strong></li>
+            </ul>
+          </div>
+          <div class="award-group">
+            <h4>全国大学生嵌入式芯片与系统设计竞赛</h4>
+            <p class="award-track">芯片应用赛道</p>
+            <ul class="award-list">
+              <li><time datetime="2025-08">2025.08</time><strong>江西赛区一等奖</strong></li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="shell footer-inner">
+      <span>丁彬 <b>·</b> 机器人软件开发作品集</span>
+      <span class="footer-note">项目插图为技术示意</span>
+      <nav class="footer-nav" aria-label="页脚导航"><a href="#projects">项目案例</a><a href="#awards">竞赛经历</a><a href="#top">返回顶部 <span aria-hidden="true">↑</span></a></nav>
+    </div>
+  </footer>
+  <dialog id="case-dialog" aria-labelledby="case-title">
+    <div class="dialog-frame">
+      <div class="dialog-top">
+        <span id="case-kicker" class="eyebrow"></span>
+        <div class="dialog-actions">
+          <button id="copy-case-link" type="button">复制案例链接</button>
+          <button type="button" class="close" aria-label="关闭项目详情">×</button>
+        </div>
+      </div>
+      <p id="case-share-status" class="case-share-status" role="status"></p>
+      <input id="case-share-url" class="case-share-url" type="url" aria-label="案例链接" readonly hidden>
+      <div id="case-body"><h2 id="case-title">项目详情</h2></div>
+    </div>
+  </dialog>
+</body>
+</html>

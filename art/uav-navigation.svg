@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="590" viewBox="0 0 700 590" fill="none" role="img" aria-labelledby="title description">
+  <title id="title">无人机导航示意图</title>
+  <desc id="description">四旋翼无人机在俯视地形网格上沿规划航线飞行。橙色虚线经过多个航点，指向目标位置。</desc>
+  <defs>
+    <linearGradient id="background" x1="35" y1="12" x2="665" y2="577" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#153445"/>
+      <stop offset="1" stop-color="#091b2b"/>
+    </linearGradient>
+    <radialGradient id="focus" cx="352" cy="295" r="280" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#336b7d" stop-opacity=".52"/>
+      <stop offset="1" stop-color="#336b7d" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="airframe" x1="-35" y1="-42" x2="34" y2="41" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#d3f4e9"/>
+      <stop offset=".55" stop-color="#90cdd3"/>
+      <stop offset="1" stop-color="#5293a4"/>
+    </linearGradient>
+    <pattern id="grid" width="26" height="26" patternUnits="userSpaceOnUse">
+      <path d="M26 0H0V26" stroke="#8cc9cf" stroke-opacity=".14"/>
+    </pattern>
+    <pattern id="grid-major" width="104" height="104" patternUnits="userSpaceOnUse">
+      <path d="M104 0H0V104" stroke="#8cc9cf" stroke-opacity=".20"/>
+    </pattern>
+    <clipPath id="frame">
+      <rect x="24" y="24" width="652" height="542" rx="5"/>
+    </clipPath>
+    <path id="flight-path" d="M103 449c35 0 48-53 85-68 41-17 63 47 106 21 27-17 30-67 63-101 28-30 62-53 110-57 31-3 67-19 77-51l14-45"/>
+    <g id="rotor">
+      <circle r="29" fill="#122f40" fill-opacity=".88" stroke="#96cbd0" stroke-width="1.5"/>
+      <circle r="24" stroke="#5e9eac" stroke-opacity=".72"/>
+      <path d="M-19-9C-13-15-6-10 0 0 8 1 17 3 19 9 13 15 6 10 0 0-8-1-17-3-19-9Z" fill="#8ec4c9" fill-opacity=".75"/>
+      <circle r="5" fill="#19394b" stroke="#b4dfe0" stroke-width="1.2"/>
+    </g>
+  </defs>
+
+  <rect width="700" height="590" fill="url(#background)"/>
+  <g clip-path="url(#frame)">
+    <rect width="700" height="590" fill="url(#focus)"/>
+    <rect x="24" y="24" width="652" height="542" fill="url(#grid)"/>
+    <rect x="24" y="24" width="652" height="542" fill="url(#grid-major)"/>
+
+    <!-- Stylized terrain contours. -->
+    <g stroke="#6ba9bb" stroke-opacity=".34" stroke-width="1.1">
+      <path d="M25 133c54 8 66-31 114-30 33 1 46 16 76 11 51-9 76 10 78 37 2 25-17 39-56 40-32 1-34 23-60 35-30 14-54 2-83 14-29 13-42 35-69 39"/>
+      <path d="M25 149c56 4 73-34 117-32 27 1 40 17 76 11 34-6 57 5 59 24 1 17-13 24-43 26-39 3-38 24-65 36-26 11-50 2-81 15-28 13-38 29-63 33"/>
+      <path d="M25 167c58 0 83-33 119-34 22-1 38 16 70 10 24-4 45 0 47 11 2 10-8 11-34 14-42 5-43 28-62 35-28 11-51 3-84 17-27 12-35 24-56 27"/>
+      <path d="M25 185c57-1 85-35 122-37 18-1 35 14 61 9M25 204c44-2 63-15 95-29 23-10 34-10 59-1"/>
+      <path d="M682 334c-39 8-64 22-94 34-42 16-58 4-87 14-38 13-46 43-35 65 13 23 45 19 68 33 27 16 26 51 56 64 37 16 62-10 92 1"/>
+      <path d="M682 355c-36 7-57 22-90 34-39 14-60 3-85 14-26 12-32 28-24 41 11 20 36 15 61 29 32 18 31 51 54 59 30 11 60-10 84 1"/>
+      <path d="M682 375c-39 11-56 25-88 33-29 7-58 2-76 11-13 7-15 16-7 24 11 11 28 10 43 19 34 19 37 51 57 57 26 8 51-9 71-3"/>
+      <path d="M682 395c-33 12-47 21-77 28-18 4-37 3-51 9 27 9 43 34 60 48 16 13 46 0 68-3"/>
+    </g>
+    <g fill="#8fc7ce" fill-opacity=".28">
+      <circle cx="99" cy="171" r="2"/>
+      <circle cx="145" cy="148" r="2"/>
+      <circle cx="169" cy="214" r="2"/>
+      <circle cx="240" cy="191" r="2"/>
+      <circle cx="482" cy="444" r="2"/>
+      <circle cx="553" cy="463" r="2"/>
+      <circle cx="594" cy="407" r="2"/>
+      <circle cx="610" cy="520" r="2"/>
+    </g>
+  </g>
+
+  <rect x="23" y="23" width="654" height="544" rx="5" stroke="#42687a"/>
+  <path d="M23 49V23h26m602 0h26v26m0 492v26h-26m-602 0H23v-26" stroke="#a7dbdc" stroke-width="2"/>
+  <g font-family="Consolas, monospace" font-size="12" letter-spacing="1.65" fill="#b8e1e1">
+    <text x="48" y="58">UAV NAVIGATION</text>
+    <text x="652" y="58" text-anchor="end">WAYPOINT PLANNING</text>
+  </g>
+
+  <g transform="translate(624 112)">
+    <circle r="22" stroke="#7aacb9" stroke-opacity=".42"/>
+    <path d="M0-15v30m-15-15h30" stroke="#77aeb8" stroke-opacity=".47"/>
+    <path d="M0-14l4 9-4-2-4 2Z" fill="#9fd9d9"/>
+    <text x="0" y="-28" text-anchor="middle" font-family="Consolas, monospace" font-size="10" fill="#b8e1e1">N</text>
+  </g>
+
+  <use href="#flight-path" stroke="#fa9c70" stroke-opacity=".16" stroke-width="11"/>
+  <use href="#flight-path" stroke="#ffad83" stroke-width="2.7" stroke-dasharray="5 6" stroke-linecap="round"/>
+  <g fill="#193646" stroke="#ffad83" stroke-width="1.9">
+    <circle cx="103" cy="449" r="6"/>
+    <circle cx="188" cy="381" r="5"/>
+    <circle cx="294" cy="402" r="5"/>
+    <circle cx="467" cy="244" r="5"/>
+  </g>
+  <g transform="translate(558 148)">
+    <circle r="49" stroke="#8bc9cf" stroke-opacity=".44" stroke-dasharray="2 5"/>
+    <circle r="29" stroke="#ffad83" stroke-opacity=".48" stroke-dasharray="3 4"/>
+    <path d="M-38 0h18m40 0h18M0-38v18m0 40v18" stroke="#9ecbd1" stroke-opacity=".42"/>
+    <circle r="14" fill="#193646" stroke="#ffad83" stroke-width="2"/>
+    <circle r="4.5" fill="#ffad83"/>
+  </g>
+
+  <g transform="translate(357 301) rotate(34)" stroke-linecap="round" stroke-linejoin="round">
+    <circle r="100" fill="#234958" fill-opacity=".42" stroke="#9ad3d7" stroke-opacity=".55" stroke-dasharray="3 6"/>
+    <path d="M0-108l-5 9h10Z" fill="#ffad83"/>
+    <path d="M-13-15l-42-45m68 45 42-45m-68 76-42 44m68-44 42 44" stroke="#102737" stroke-width="14"/>
+    <path d="M-13-15l-42-45m68 45 42-45m-68 76-42 44m68-44 42 44" stroke="#8bc5cd" stroke-width="8"/>
+    <use href="#rotor" x="-55" y="-60"/>
+    <use href="#rotor" x="55" y="-60"/>
+    <use href="#rotor" x="-55" y="60"/>
+    <use href="#rotor" x="55" y="60"/>
+    <path d="M-22-29-13-42h26l9 13v57L11 39h-22l-11-11Z" fill="#102737" transform="translate(0 5)"/>
+    <path d="M-22-29-13-42h26l9 13v57L11 39h-22l-11-11Z" fill="url(#airframe)" stroke="#c2e9e4" stroke-width="2"/>
+    <path d="M-12-21h24v35h-24Z" fill="#214959" stroke="#adced0"/>
+    <path d="M-7 24h14m-14 5h14" stroke="#457e89"/>
+    <rect x="-9" y="-34" width="18" height="9" rx="3" fill="#214354"/>
+    <circle cy="-29" r="2.7" fill="#95d1d3"/>
+  </g>
+
+  <g font-family="Consolas, monospace" font-size="10.5" letter-spacing="1.1" fill="#b1d7da">
+    <path d="M103 459v17h23M568 134l18-17h19" fill="none" stroke="#9ebdc8" stroke-opacity=".72"/>
+    <text x="127" y="480">TAKEOFF</text>
+    <text x="600" y="111" text-anchor="end" fill="#ffad83">DESTINATION</text>
+    <path d="M189 374v-19l-19-18h-49" fill="none" stroke="#9ebdc8" stroke-opacity=".72"/>
+    <text x="120" y="329">WAYPOINT</text>
+  </g>
+  <g font-family="Consolas, monospace" font-size="10.5" letter-spacing="1.1" fill="#b1d7da">
+    <path d="M48 523h604" stroke="#87b8c6" stroke-opacity=".30"/>
+    <path d="M48 544h24" stroke="#ffad83" stroke-width="2.4" stroke-dasharray="4 4"/>
+    <text x="81" y="548">PLANNED ROUTE</text>
+    <circle cx="227" cy="544" r="4" fill="#193646" stroke="#ffad83" stroke-width="1.5"/>
+    <text x="240" y="548">WAYPOINT</text>
+    <text x="652" y="548" text-anchor="end">SCHEMATIC VIEW</text>
+  </g>
+</svg>
